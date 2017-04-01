@@ -34,7 +34,7 @@ int main()
 {
 	int a[10];
 	cout << "Please enter 10 numbers as you like: ";
-	for (int& value : a) cin >> value;
+	for (auto& value : a) cin >> value;
 	MergeSort<int>(a, 10);
 	cout << "Low-to-High: ";
 	for (int& value : a) cout << value << "   "; cout << endl;
